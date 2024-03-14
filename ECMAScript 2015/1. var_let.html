@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            'var' pode sofrer hoisting(elevaçao de escopo de variavel)
+            'let' preserva o escopo da variavel
+        */
+
+        //exemplo de problema do var:
+        var serie = 'friends'
+
+        if(true){
+            var serie = 'stranger things'
+            console.log('no escopo de bloco: ' + serie)
+        }
+
+        console.log('no escopo global: ' + serie)
+
+        //ocorreu uma sobreposicao de variavel
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

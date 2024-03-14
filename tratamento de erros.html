@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //netflix
+
+        var video = Array()
+
+        video[1] = Array()
+        video[1]['nome'] = 'Fullmetal Alchemist'
+        video[1]['categoria'] = 'Anime'
+
+        function getVideo(video){
+            try{
+                //logica
+                //http
+                console.log([0][anime])
+            }
+            catch(erro){
+                tratarErro(erro)
+                //console.log('video não disponível')
+                throw new Error('houve um erro, mas ja estamos trabalhando nele!')
+            }
+            finally{
+                console.log('sempre passa por aqui (try/catch)')
+            }
+        }
+
+        function tratarErro(e){
+            //logica para registrar o erro no servidor
+            console.log(e)
+        }
+        getVideo(video)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

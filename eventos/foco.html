@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        onfocus = quando o elemento ganha o foco
+        onblur = quando o elemento perde o foco
+        onchange = quando o elemento sofre uma modificação
+     -->
+    <input onfocus="console.log('ganho foco')" onblur="console.log('perdeu foco')" type="text">
+    
+    <select onchange="console.log('modificado')">
+        <option>Selecione</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+</body>
+</html>

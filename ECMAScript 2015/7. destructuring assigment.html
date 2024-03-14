@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let frutas = ['abacaxi', 'uva', 'pera', 'mamão']
+
+        //let [a, b, , c] = frutas //pular um indicie
+
+        let [a, b = 'abacate', c, d, e = 'maçã'] = frutas
+
+        console.log(a, b, c, d, e)
+
+
+
+        let coisas = [['abacaxi', 'uva', 'pera', 'mamão'], ['José', 'Maria']]
+
+        let [, [, n2]] = coisas
+        console.log(n2)
+
+        let [[, , n3], ] = coisas
+        console.log(n3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

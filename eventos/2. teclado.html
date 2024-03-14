@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function acao1(){
+            alert('evento disparado')
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+        tipos de evento:
+        onkeydown = ocorre ao pressionar a tecla. O evento ocorre primeiro
+        e o caractere só exibe após a conclusão evento
+
+        onkeyup = ocorre ao soltar a tecla. O caractere exibe primeiro e 
+        evento ocorre depois
+
+        onkeypress = semelhante ao onkeydown, mas só funciona com teclas
+        de caracter
+     -->
+
+    <input onkeypress="acao1()" type="text">
+</body>
+</html>

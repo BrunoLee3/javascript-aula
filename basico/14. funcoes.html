@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //tipo void = nao retorna um valor para a chamada
+        //tipo return = retorna um valor para a chamada
+
+
+        //TIPO VOID
+        // function CalcularAreaTerreno(largura, comprimento){
+        //     var area = largura * comprimento;
+
+        //     document.write(area)
+        // }
+
+        // CalcularAreaTerreno(15, 25)
+
+        //TIPO RETURN
+        function CalcularAreaTerreno(largura, comprimento){
+            var area = largura * comprimento;
+
+            return area
+        }
+
+        var largura = prompt('digite a largura do terreno: ')
+        var comprimento = prompt('digite o comprimento do terreno: ')
+
+        var area = CalcularAreaTerreno(largura, comprimento)
+        document.write(area)
+
+        /*OBS: uma particularidade do javascript é a flexibilidade da passagem de 
+        parametros. é possivel passar mais ou menos parametros do que a funçao  comporta.*/
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //template string realiza a interpolação de strings com qualquer coisa
+        let nome = 'Bruno'
+
+        //console.log('olá ' + nome + ', tudo bem?')
+        console.log(`olá ${nome}, tudo bem?`)
+
+        console.log(`
+            olá ${nome}, 
+            tudo bem?
+        `)
+        //não dá erro e pula a linha no console!!
+
+        console.log(`7 + 7 = ${7+7}`)
+
+        function calcular(x, y){
+            return x*y
+        }
+
+        console.log(`8 x 8 = ${calcular(8, 8)}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

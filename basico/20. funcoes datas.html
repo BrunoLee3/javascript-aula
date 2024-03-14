@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = new Date()
+
+        //retorna o dia baseado na data do SO
+        //document.write(data.getDate())
+
+        //retorna o mes de 0 a 11
+        //document.write(data.getMonth()+1)
+
+
+
+        //adicionar/subtrair dias
+        document.write(data.toString())
+        data.setDate(data.getDate() + 1)
+        document.write('<hr>')
+        document.write(data.toString())
+
+
+        //adicionar/subtrair meses
+        data.setMonth(data.getMonth() + 1)
+        document.write('<hr>')
+        document.write(data.toString())
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicie de massa corporal</title>
+    <script>
+        var nome = prompt('Digite seu nome:');
+        var altura = prompt('digite sua altura em cm:');
+        var peso = prompt('digite seu peso:');
+
+        altura = parseFloat(altura);
+        peso = parseFloat(peso);
+
+        var altura = altura/100;
+
+        var indicie = peso/Math.pow(altura, 2);
+
+        var classificacao;
+
+        if(indicie < 16){
+            classificacao = 'baixo peso muito grave'  
+        }
+        else if(indicie >= 16 && indicie <= 16.99){
+            classificacao = 'baixo peso grave';
+        }
+        else if(indicie >= 17 && indicie <= 18.49){
+            classificacao = 'baixo peso'
+        }
+        else if(indicie >= 18.50 && indicie <= 24.99){
+            classificacao = 'peso normal'
+        }
+        else if(indicie >= 25 && indicie <= 29.99){
+            classificacao = 'sobrepeso'
+        }
+        else if(indicie >= 30 && indicie <= 34.99){
+            classificacao = 'obesidade grau I'
+        }
+        else if(indicie >= 35 && indicie <= 39.99){
+            classificacao = 'obesidade grau II'
+        }
+        else if(indicie > 40){
+            classificacao = 'obesidade grau III'
+        }
+
+        document.write(nome + ' possui indicie de massa corporal igual a ' + indicie + ', sendo classificado como: ' + classificacao)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

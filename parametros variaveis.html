@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma(){
+            console.log(arguments)  //a quantidade de argumentos será a quantidade de parametros
+            
+            var res = 0
+            for(var i in arguments){
+                res += arguments[i]
+            }
+            console.log(res)
+        }
+
+        console.log(soma(1, 2, 5))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mudarCor(amarelo, vermelho, verde){
+            document.getElementById('id_input').style.background = amarelo
+            
+            var qtdChar = document.getElementById('id_input').value 
+
+            if(qtdChar.length > 2){
+                document.getElementById('id_input').style.background = vermelho
+            }
+            else{
+                document.getElementById('id_input').style.background = verde
+            }
+        }
+    </script>
+</head>
+<body>
+    <input onfocus="mudarCor('#ffff00')" onblur="mudarCor('#ff0000', '#008000')"
+    type="text" id="id_input">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var listaNomes = ['liviane', 'lucas', 'fernanda', 'roberto']
+
+        listaNomes.forEach(function(valor, indice, array){
+            console.log('indice ' + indice + ' valor ' + valor) 
+
+            if(valor == 'lucas'){
+                array[indice] = 'valor substituto'
+            }
+        })
+
+        console.log(listaNomes)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

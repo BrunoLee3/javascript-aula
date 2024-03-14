@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //parametros default são argumentos padrões da função, que são usados quando a função não recebe os parametros
+        function contarUmaHistoria(personagem = 'Fubá', atividade = 'brincar', nomeDono = 'Roberto'){
+            document.write(`Era uma vez um cachorro chamado ${personagem}, e ele adorava ${atividade}. Seu dono era o ${nomeDono} e eles viveram felizes para sempre`)
+
+        }
+
+        contarUmaHistoria(undefined, 'correr', undefined)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

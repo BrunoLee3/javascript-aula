@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data1 = new Date(2017, 0, 15)
+        var data2 = new Date(2017, 1, 23)
+
+        document.write(data1.toString())
+        document.write('<hr>')
+        document.write(data2.toString())
+
+        document.write('<br><br><hr>')
+
+        //converter para algo calculavel
+        document.write(data1.getTime())
+        document.write('<hr>')
+        document.write(data2.getTime())
+
+        //getTime calcula os milissegundos a partir de 1/1/1970 ate a data da variavel
+        
+        document.write('<hr>')
+        //diferença em milissegundos de uma data da outra
+        var milissegundosEntreDatas = data2.getTime() - data1.getTime()
+        document.write(milissegundosEntreDatas)
+
+        document.write('<hr>')
+        //quantos milissegundos tem 1 dia
+        var milissegundosEm1dia = 1*24*60*60*1000
+        document.write('1 dia tem: ' + milissegundosEm1dia + ' milissegundos')
+
+        document.write('<hr>')
+        //conversao dos milisegundos para dias
+        document.write(Math.ceil(milissegundosEntreDatas/milissegundosEm1dia) + ' dias entre data 1 e data 2')
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

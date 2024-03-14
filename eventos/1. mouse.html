@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: #ccc; height: 150px; width: 150px;
+        }
+    </style>
+
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+        tipos de eventos:
+        onclick = ocorre ao clicar sobre
+        ondblclick = ocorre ao clicar duas vezes
+        onmouseup = ocorre ao soltar o botão do mouse
+        onmouseover = ocorre ao passar o cursor sobre
+        onmouseout = ocorre ao tirar o cursor da área
+
+        mude o tipo de evento na div abaixo para ver cada um:
+     -->
+    <div onmouseout="acao()"></div>
+
+    <!-- OBS: é possível disparar mais de uma função no mesmo elemento -->
+    <!-- OBS2: diferentes elementos suportam diferentes eventos ou nenhum -->
+</body>
+</html>
